@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveShell : MonoBehaviour
 {
-    float speed = 1.0f;
+    float speed = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class MoveShell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Translate(0, Time.deltaTime*0.5f, Time.deltaTime * speed);
+        this.transform.Translate(0, 0, Time.deltaTime * speed);
     }
 }
